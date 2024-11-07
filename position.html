@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scroll Container</title>
+	<style type="text/css">
+		.header, .footer{
+			height: 250px;
+			background-color: green;
+			border-radius: 5px;
+			color: green;
+
+			font-size: 50px;
+			font-weight: bold;
+			font-family: arial;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-shadow: 5px 5px 5px black;
+
+		}
+
+		.parent{
+			display: flex;
+			height: 180px;
+			overflow: auto;
+			border-radius: 5px;
+		}
+		.parent div{
+			min-width: 150px;
+			height: 150px;
+			background-color: green;
+			margin: 5px;
+			border-radius: 5px;
+		}
+
+		.circle{
+			height: 50px;
+			width: 50px;
+			background-color: green;
+
+			border-radius: 50%;
+			/*flex arrangement*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+
+			font-size: 30px;
+			font-weight: bold;
+
+			/*positioning the position prop.*/
+			position: fixed;
+			bottom: 5px;
+			right: 5px;
+
+			/*shadow control*/
+			box-shadow: 0px 0px 5px white;
+			text-shadow: 5px 5px 5px white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Scroll Container</h1>
+	<div class="header">The color is GREEN</div>
+
+	<div class="parent">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+
+	<div class="footer">FOOTER</div>
+
+
+	<div class="circle">+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Tutorial</title>
+
+	<style type="text/css">
+		.parent{
+			display: flex;
+			height: 250px;
+			background-color: pink;
+			border-radius: 50px;
+			padding: 20px;
+		}
+
+		.parent div{
+			background-color: indigo;
+			margin: 5px;
+			flex: 1;
+
+		}
+
+		.parent div:nth-child(2){
+			flex-basis: 30px;
+		}
+		.parent div:nth-child(3){
+			flex: 2;
+		}
+	</style>
+</head>
+<body>
+	<h1>Flex Tutorial</h1>
+
+	<div class="parent">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+</body>
+</html>

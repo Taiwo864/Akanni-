@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input</title>
+	<style type="text/css">
+		*{
+            margin: 0px;
+            padding: 0px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: arial;
+            background-color: indigo;
+        }
+        button{
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 5px;
+            color: darkslategray;
+        }
+        button:hover{
+        	background-color: blue;
+        	color: white;
+        	transition: all 1s;
+        }
+        input{
+            background-color: lightgray;
+            padding: 7px;
+            border-radius: 10px;
+        }
+	</style>
+</head>
+<body>
+	<h1>Input</h1>
+	<!--SET AND GET ASPECT OF TEXT-->  
+	<input type="text" id="surname" placeholder="Please input your surname"><br><br>
+	<input type="text" id="firstname" placeholder="Please input your firstname">
+
+	<button onclick="setText()">Submit</button>
+
+	<h2 id="getInput"></h2>
+
+	<script type="text/javascript">
+		
+		function setText() {
+			getInput.innerText = `Welcome back!MR. ${surname.value}   ${firstname.value}`
+		}
+	</script>
+
+</body>
+</html>

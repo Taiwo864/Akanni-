@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>playing</title>
+	<style type="text/css">
+		.parent{
+			display: grid;
+			grid-template-columns: 120px 120px 120px 120px;
+			grid-gap: 5px;
+			height: 250px;
+			background-color: pink;
+			padding: 5px;
+		}
+		.parent div{
+			background-color: indigo;
+			border-radius: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		.parent div:first-child{
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		.parent div:nth-child(4){
+			grid-row-start: 3;
+			grid-row-end: 5;
+		}
+		
+		.parent div:nth-child(5){
+			grid-column-start: 2;
+			grid-column-end: 4;
+		}
+		.parent div:nth-child(3){
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Just Playing</h1>
+	<div class="parent">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+		<div>13</div>
+		<div>14</div>
+		<div>15</div>
+		<div>16</div>
+	</div>
+
+</body>
+</html>

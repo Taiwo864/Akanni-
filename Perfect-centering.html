@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfect Centering</title>
+	<style type="text/css">
+		.center
+		{
+			background-color: indigo;
+			height: 150px;
+			width: 150px;
+			color:white;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		.text{
+			background-color: violet;
+			color: white;
+			height: 150px;
+			width: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 10px;
+			border-radius: 10px;
+			font-size: 20px;
+			border: ridge 10px black;
+		}
+
+		.text:hover{
+			background-color: blue;
+			color: black;
+			
+		}
+		
+
+		.grand-parent{
+			height: 250px;
+			background-color: pink;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.child-parent{
+			background-color: white;
+			width: 150px;
+			height: 150px;
+			border-radius: 10px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Perfect Centering</h1>
+	<div class="center">center</div>
+
+	<div class="text">
+		<h1>Text</h1>
+	</div>
+	<div class="grand-parent">
+		<div class="child-parent">
+			<div>Grand Child</div>
+		</div>
+	</div>
+</body>
+</html>

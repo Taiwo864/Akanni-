@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scroll Container</title>
+	<style type="text/css">
+		.header, .footer{
+			height: 250px;
+			background-color: pink;
+			border-radius: 5px;
+		}
+
+		.parent{
+			display: flex;
+			height: 180px;
+			overflow-y: auto;
+			border-radius: 5px;
+		}
+		.parent div{
+			min-width: 150px;
+			height: 150px;
+			background-color: indigo;
+			margin: 5px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Scroll Container</h1>
+	<div class="header"></div>
+
+	<div class="parent">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+
+
+	<div class="footer"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OGSERA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+	<style type="text/css">
+		body{
+			background-image: url(images/student.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: rgb(0 255 0);
+			background-blend-mode: luminosity
+			;
+		}
+		a{
+			text-decoration: none;
+			margin: 10px;
+			color: white;
+			padding: 10px;
+		}
+		
+		.logc img{
+			border-radius: 50%;
+		}
+
+		.contact{
+			background-color: yellow;
+			height: 30px;
+			width: 10px;
+			padding: 10px;
+			margin-left: 70px;
+		}
+		.diper{
+			font-weight: bold;
+			font-size: 120px;
+			font-family: arial;
+			color: white;
+		}
+		.digital{
+			color: yellow;
+		}
+		.parent{
+			background-image: linear-gradient(to bottom, white, green);
+			height: 250px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			padding: 10px;
+			
+		}
+
+		.btn{
+			height: 170px;
+			width: 210px;
+			background-color: #dfdfdf;
+			margin: 15px;
+			border-radius: 10px;
+			font-weight: bold;
+			font-family: arial;
+			border: solid 10px yellow;
+		}
+		.home{
+			margin-left: 85px;
+		}
+		.sth{
+			margin: 45px;
+		}
+		.text{
+			color: white;
+			font-weight: bold;
+			font-size: 19px;
+		}
+		.view{
+			display: inherit;
+		}
+		
+		.profile2{
+			display: inherit;
+		}
+		.test{
+			display: inherit;
+		}
+
+		@media screen and (max-width: 800px){
+			body{
+				background-color: green;
+			}
+			.home, .sth, .contact{
+				display: none;
+			}
+			.diper{
+				display: inherit;
+				font-size: 90px;
+			}
+			.arrow img{
+			filter: brightness(1000%) invert(100%)
+			}
+
+			.digital{
+				display: inherit;
+			}
+			.parent{
+				width: 350px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				border-radius: 10px;
+				
+			}
+			.btn{
+				display: inherit;
+				padding: 10px;
+			}
+			.first-ctn{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-start;
+				flex-direction: column;
+			}
+			.second-ctn{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-start;
+				flex-direction: column;
+				padding: 13px;
+				 
+			}
+			.third-ctn{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-start;
+				flex-direction: column;
+			}
+			.fourth-ctn{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-start;
+				flex-direction: column;
+			}
+			.view{
+				background-color: #788000e3;
+				height: 15px;
+				width: 100px;
+			}
+			.profile1{
+				background-color: #788000e3;
+				
+			}
+			.profile2{
+				background-color: #788000e3;
+				height: 15px;
+			}
+			.test{
+				background-color: #788000e3;
+				height: 15px;
+			}			
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<h2>OGSERA</h2>
+	<button class="button"><img src="icons/bars.svg" width="25px"></button>
+	<a href="#" class="logc"><center><img src="images/ogun-state.jpg" width="50px" height="50px"></center></a>
+	<a href="#" class="home">Home</a>
+	<a href="#" class="sth">Downloads</a>
+	<a href="#" class="sth">Alumni</a>
+	<a href="#" class="sth">Education Statistic</a>
+	<a href="#" class="contact">Contact Us</a>
+	<h1   class="diper"><center>DiPER</center></h1>
+	<h3 class="digital"><center>Digital platform for Educational Revitalisation</center></h3>
+	<p><center  class="text">A secured web and mobile adaptabe cloud-based platform for<br> coordiating and digitizing the administration of public school with mechanism for<br> real-time data analysis to imorove teaching and learning outcomes </center></p>
+	<a href="#" class="arrow"><center>Login to DiPER<img src="icons/arrow-right.svg" width="20px"></center></a>
+	<div></div>
+	<div class="parent">
+		<h3>Announcement: Get updates on the various online Application for schools and learners</h3>
+		<div class="first-ctn btn">screening Test<br>2024/2025 screening Test Result is out<br><br><br> 
+			<a href="#" class="view"><center>view Result </center></a></div>
+		<div class="second-ctn btn">inter-school Transfer<br>online Application for inter-school Transfer<br><br><br>
+			<a href="#" class="profile1"><center>Login to your profile</a></center> </div>
+		<div class="third-ctn btn">BECE<br>2022/2023 BECE Registration is ongoing<br><br><br>
+			<a href="#" class="profile2"><center>Login to your profile</center></a></div>
+		<div class="fourth-ctn btn">OgunTEAch<br>Online Application for OgunTEAch<br><br><br>
+			<a href="#" class="test"><center>Sreening Test Center</center></a></div>
+		
+	</div>
+
+</body>
+</html>

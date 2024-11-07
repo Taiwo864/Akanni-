@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Div</title>
+</head>
+<body>
+	<h1>Create Div</h1>
+	<script type="text/javascript">
+		var parent = document.createElement("div")
+
+		var childOne = document.createElement("button")
+		childOne.innerText = "Cancel" // WHAT WILL SHOW IN THE CHILD...
+
+		var childTwo = document.createElement("button")
+		childTwo.innerText = "Submit"
+
+		parent.appendChild(childOne) // TO APPEND IT TO THE CHILD 
+		parent.appendChild(childTwo)
+
+		document.body.appendChild(parent) // TO CALL IT IN THE FRONT ENT
+	</script>
+
+</body>
+</html>

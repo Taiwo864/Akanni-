@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class</title>
+</head>
+<body>
+	<h1>Class</h1>
+
+	<script type="text/javascript">
+		document.write(food)
+		
+		                  //class:properties.     
+		//decleared class
+		class Human{
+			hand = 2
+			skinColor = "chocolate"
+			tongue = "Tomatoe red"
+			_fingerNails = 10  //_ makes it private
+			toe = 10
+		}
+		//instantiating: giving birth to the decleared class
+		var ahmad = new Human()
+		ahmad.leg = 2 //to add more properties to the class for adjustment
+		//calling the properties under the class
+		document.write(`Ahmad skin color is ${ahmad.skinColor}`)
+		document.write("<br>")
+		document.write(`Ahmad hand is ${ahmad.hand}`)
+		document.write("<br>")
+		document.write(`Ahmad tongue is ${ahmad.tongue}`)
+		document.write("<br>")
+		document.write(`Ahmad finger nails is ${ahmad.fingerNails}`)
+		document.write("<br>")
+		document.write(`Ahmad toe is ${ahmad.toe}`)
+		document.write("<br>")
+
+		//class: construtor
+		class Water{
+			constructor(){
+				document.write("Am a class Water")	
+			}
+
+			//method
+			ocean(){
+				document.write("<br>", "Am ocean water", "<br>")
+			}
+
+			lake(){
+				document.write("Am lake water", "<br>")
+			}
+		}
+		var tapWater = new Water()
+		tapWater.ocean() // to call method
+		tapWater.lake()
+
+
+		//class with argument 
+		class Car{
+			constructor(model, color, year){
+				this.model = model  //this is representing the class car to be able to call
+				this.color = color
+				this.year = year
+
+				document.write(`The model of my car is ${this.model}, with color ${this.color}, and made in year ${this.year}, "<br>"`)				
+			}
+		}
+
+
+		var toyota = new Car("Toyota", "Blue", 2014)
+
+		//Method with Argument
+		class Device{
+			type ="" // naming it here will serve as default (//Default Argument)
+			name = ""
+			screenSize = ""
+			ScreenType = ""
+			color = ""
+			charger = ""
+			operatingSystem = ""
+
+			setType(type){
+				this.type = type
+			}
+
+			getType(){
+				return this.type
+			}
+
+			setName(name){
+				this.name = name
+			}
+
+			getName(){
+				return this.name
+			}
+			setScreenSize(screenSize){
+				this.screenSize = screenSize
+			}
+
+			getScreenSize(){
+				return this.screenSize
+			}
+			setScreenType(screenType){
+				this.screenType = screenType
+			}
+
+			getScreenType(){
+				return this.screenType
+			}
+
+			setColor(color){
+				this.color = color
+			}
+
+			getColor(){
+				return this.color
+			}
+
+			setCharger(charger){
+				this.charger = charger
+			}
+			getCharger(){
+				return this.charger
+			}
+
+			setOperatingSystem(operatingSystem){
+				this.operatingSystem = operatingSystem
+			}
+
+			getOperatingSystem(){
+				return this.operatingSystem
+			}
+			// To call it all together
+			callAll(){
+				return (`Type: ${this.getType()} <br> Name: ${this.getName()} <br> Screen Size: ${this.getScreenSize()} <br> Screen Type: ${this.getScreenType()} <br> Color: ${this.getColor()} <br> Charger: ${this.getCharger()} <br> Operating System ${this.getOperatingSystem()} <br>`)
+			}
+
+		}
+
+		var itel = new Device() // Instantiating Class-Method Device
+                           //Set to name $ Get to call
+		itel.setType("Mobile Device") // setting properties for *Type*
+		itel.setName("Itel A56")
+		itel.setScreenSize("5.5 inches") // setting properties for *screeSize*
+		itel.setScreenType("IPS")
+		itel.setColor("Black")
+		itel.setCharger("Type C")
+		itel.setOperatingSystem("android13")
+
+		document.write(itel.getType(), "<br>")// Getting/calling prop. *Type*
+		document.write(itel.getName(), "<br>") 
+		document.write(itel.getScreenSize(), "<br>")
+		document.write(itel.getScreenType(), "<br>")
+		document.write(itel.getColor(), "<br>")
+		document.write(itel.getCharger(), "<br>")
+		document.write(itel.getOperatingSystem(), "<br>", "<br>", "<br>")
+
+		document.write(itel.callAll(), "<br>", "<br>", "<br>")// geting /calling all properties at once.
+
+
+
+		class System{
+			type = ""
+			name = ""
+			color = ""
+			windows = ""
+			core = ""
+			category = ""
+			operation = ""
+
+
+			setType(type){
+				this.type = type
+			}
+			getType(){
+				return this.type
+			}
+
+			setName(name){
+				this.name = name
+			}
+			getName(){
+				return this.name
+			}
+
+			setColor(color){
+				this.color = color
+			}
+
+			getColor(){
+				return this.color
+			}
+
+			setWindows(windows){
+				this.windows = windows
+			}
+			getWindows(){
+				return this.windows
+			}
+
+			setCore(core){
+				this.core = core
+			}
+			getCore(){
+				return this.core
+			}
+
+			setCategory(category){
+				this.category = category
+			}
+			getCategory(){
+				return this.category
+			}
+
+			setOperation(operation){
+				this.operation = operation
+			}
+			getOperation(){
+				return this.operation
+			}
+
+			showAll(){
+				return (`Type: ${this.getType()} <br> Name: ${this.getName()} <br> Color: ${this.getColor()} <br> Operation: ${this.getOperation()} <br> Windows: ${this.getWindows()} <br> Category: ${this.getCategory()} <br> Core: ${this.getCore()} <br>`)
+			}
+
+		}
+
+		var mySystem = new System()
+
+		mySystem.setType("Laptop")
+		mySystem.setName("hp")
+		mySystem.setColor("Black")
+		mySystem.setOperation("windows")
+		mySystem.setWindows("windows8")
+		mySystem.setCore("CORE i5")
+		mySystem.setCategory("EliteBook")
+
+
+		document.write(mySystem.showAll(), "<br>")
+	</script>
+
+</body>
+</html>

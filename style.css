@@ -1,0 +1,76 @@
+.red{
+	color: red;
+}
+.blue{
+	color: blue;
+}
+.white{
+	color: white;
+}
+.green{
+	color: green;
+}
+.purple{
+	color: purple;
+}
+.big{
+	font-size: 50px;
+}
+
+.medium{
+	font-size: 40px;
+}
+.small{
+	font-size: 25px;
+}
+.flex-ctn{
+	display: flex;
+}
+.column{
+	flex-direction: column;
+}
+.row{
+	flex-direction: row;
+}
+.column-reverse{
+	flex-direction: column-reverse;
+}
+.perfect-centering{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right-centering{
+	flex: 1;
+	justify-content: flex-start;
+	align-items: center;
+}
+.left-centering{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.child{
+	background-color: indigo;
+	border-radius: 5px;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+.a{
+	text-decoration: none;
+}
+.font{
+	font-weight: bold;
+	font-style: italic;
+	font-family: arial;
+}
+.line-height{
+	line-height: 1;
+}
+.text-align-justify{
+	text-align: justify;
+}
+.text-align-center{
+	text-align: center;
+}

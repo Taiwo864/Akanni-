@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Dictionary</title>
+</head>
+<body>
+	<h1>Dictionary</h1>
+
+	<script type="text/javascript">
+		
+		let profile = {
+			"name":"Bamidele Wasiu",
+			"gender": "Male",
+			"age":17,
+			"skinColor": "Light",
+			"bloodGroup": "B+",
+			"genotype": "AA",
+			}
+
+			document.write("Name: ", profile["name"]) //To call name in profile
+
+			document.write("<br>")
+			document.write("Gender:", profile["gender"])
+
+			document.write("<br>")
+			document.write("Age:", profile["age"])
+
+			document.write("<br>")
+			document.write("SkinColor:", profile["skinColor"])
+
+			document.write("<br>")
+			document.write("Blood group:", profile["bloodGroup"])
+
+			document.write("<br>")
+			document.write("Genotype:", profile["genotype"])
+
+
+			document.write("<br> <br>")
+			var processedProfile = JSON.stringify(profile) //turn js object to string for reading purpose
+			document.write(processedProfile)
+
+			profile["occupation"] = "programmer" //To add to the dictionary(update)
+			profile["phone"] = "09076387838"
+			profile["name"] ="Bamidele Abdul-wasiu"
+
+
+			document.write("<br> <br>")
+			var processedProfile = JSON.stringify(profile)
+			document.write(processedProfile)
+ 
+
+	</script>
+
+</body>
+</html>

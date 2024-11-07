@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Icon Button</title>
+
+	<style type="text/css">
+		.ibtn{
+			text-decoration: none;
+			background-color: rgba(0,0,0,0.1);
+			padding: 10px 20px;
+			color: rgba(0,0,0,0.7);
+			border-radius: 30px;
+
+
+			display: flex;
+			flex-direction: column;
+
+			width: 50px;
+
+			justify-content: center;
+			align-items: center;
+
+			filter: brightness(1000%);
+		}
+		img{
+			/*To change icon color*/
+			filter: brightness(1000%) invert(8%) sepia(100%) saturate(6481%) hue-rotate(300deg) brightness(102%) contrast(143%)
+		}
+	</style>
+</head>
+<body>
+	<h1>Icon Button</h1>
+
+	<a href="#" class="ibtn"><img src="icons/desktop.svg" width="20px"> Home
+</a>
+
+</body>
+</html>

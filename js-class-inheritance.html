@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ClassInheritance</title>
+</head>
+<body>
+	<h1>Class Inheritance</h1>
+
+	<script type="text/javascript">
+		
+		//Parent Class 
+		class Plant{
+			constructor(){
+				document.write("I can photosynthesized")
+			}
+
+			//method
+			root(){
+				document.write("<p>I have tap root</p>")
+			}
+		}
+
+
+		//child class
+		class Beans extends Plant{ //to inherit 
+			constructor(){
+				super() //to also call for the parent prop.(constructor)
+				document.write("<p>I am a pea, I belong to Legumiosae family</p>")
+			}
+			root(){
+				document.write("<p>I have fibrous root</p>")
+			}
+		}
+
+		var whiteBeans = new Beans()
+		whiteBeans.root()
+
+		var myPlant = new Plant().root()
+
+	</script>
+
+</body>
+</html>

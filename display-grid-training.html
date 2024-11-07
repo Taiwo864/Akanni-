@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Training</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+
+	<style type="text/css">
+
+		div{
+			border-radius: 10px;
+			margin: 5px;
+		}
+
+		.data-usage{
+			height: 20px;
+			width: 97%;
+			border-radius: 20px;
+			background-color: rgba(255, 255, 255, 0.6);
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 12px;
+
+		}
+
+		.parent{
+			background-color: rgba(0, 0, 0, 0.6);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 10px;
+			background-image: url("images/lil-bro-pic.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-blend-mode: multiply;
+
+		}
+		.center{
+			display: flex;
+			flex-direction: column;
+			width: 250px;
+		}
+
+		.sec-one{
+			display: flex;
+			height: 120px;
+			margin: 5px;
+			background-color: 
+		}
+		.network{
+			display: flex;
+			flex-direction: column;
+			flex: 2;
+		}
+
+		.network div{
+			background-color: rgba(255, 255, 255, 0.6);
+			height: 48%;
+			margin-left: 0px;
+		}
+
+		.bright{
+			background-color: rgba(255, 255, 255, 0.6);
+			flex: 1;
+		}
+		.volume{
+			background-color: rgba(255, 255, 255, 0.6);
+			flex:1;
+			width: 20px;
+		}
+		
+
+		.others{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+		}
+
+		.others div{
+			width: 50px;
+			height: 50px;
+			background-color: rgba(255, 255, 255, 0.6);
+			display: grid;
+			grid-gap: 10px;
+			border-radius: 20px;
+
+		}
+
+
+
+
+
+		.wifi{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.data{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.data:hover{
+			background-color: green;
+			transition: all 1s;
+		}
+		.data img{
+			filter: brightness(1000%) invert(100%)sepia(%) saturate(%) hue-rotate(3000deg) contrast(%)
+		}
+		.volume{
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			padding: 5px;
+		}
+		.volume:hover{
+			background-color: blue;
+			transition: all 1s;
+		}
+		.volume img{
+			filter: brightness(1000%) invert(100%)
+		}
+
+		.bluetooth{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.bluetooth:hover{
+			background-color: blue;
+			transition: all 1s;
+		}
+
+
+		.bell{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.bell:hover{
+			background-color: blue;
+			transition: all 1s;
+		}
+		.bell img{
+			filter: brightness(1000%) invert(100%) /*sepia(100%) saturate(6481%) hue-rotate() brightness(102%) contrast(143%)*/
+		}
+
+		.plane{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.eyecare{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.location{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.moon{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.calculator{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Grid Training</h1>
+
+
+	<div class="parent">
+		<div class="center">
+		<div class="data-usage"><img src="icons/burn.svg" width="15px"> 28.13 MB Used today</div>
+
+				<div class="sec-one">
+
+					<div class="network">
+						<div class="wifi"><img src="icons/wifi.svg" width="20px;"></div>
+						<div class="data"><img src="icons/network.png" width="30px"></div>
+					</div>
+
+						<div class="bright"></div>
+						<div class="volume"><img src="icons/music.svg" width="20px"></div>
+					
+					</div>
+
+				<div class="others">
+						<div class="torch"></div>
+						<div class="bluetooth"><img src="icons/data_bluetooth.png" width="25"></div>
+						<div class="A"></div>
+						<div class="bell"><img src="icons/bell.svg" width="20px"></div>
+						<div class="plane"><img src="icons/plane.svg" width="20px"></div>
+						<div class="box"></div>
+						<div class="rotate"></div>
+						<div class="hotspot"></div>
+						<div class="circle"></div>
+						<div class="eyecare"><img src="icons/eye.svg" width="20px"></div>
+						<div class="triangle"></div>
+						<div class="location"><img src="icons/location-dot.svg" width="20px"></div>
+						<div class="moon"><img src="icons/moon.svg" width="15px"></div>
+						<div class="vedio"></div>
+						<div class="idk"></div>
+						<div class="calculator"><img src="icons/calculator.svg" width="15px"></div>
+				</div>
+		</div>
+	</div>
+
+</body>
+</html>

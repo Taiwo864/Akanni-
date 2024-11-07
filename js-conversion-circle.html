@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversion</title>
+	<style type="text/css">
+		*{
+            margin: 0px;
+            padding: 0px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: arial;
+            background-color: indigo;
+        }
+        body{
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	flex-direction: column;
+        	height: 100vh;
+        }
+        button{
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 5px;
+            color: darkslategray;
+        }
+        input{
+            background-color: lightgray;
+            padding: 7px;
+            border-radius: 10px;
+        }
+	</style>
+</head>
+<body>
+	<h1>Conversion of circle</h1>
+	<label>Area of circle:</label><br>
+	<input type="number" id="pi" placeholder="Put the value of your PI">
+	<input type="number" id="r" placeholder="Put the value of your rad">
+
+	<button onclick="areaOfCircle(pi.value, r.value)">Submit</button>
+	<br><br>
+
+	<h2 id="getValue"></h2>
+
+	<script type="text/javascript">
+		function areaOfCircle(pi, r) {
+			var formula = parseFloat(`${pi * r**2}`)
+			getValue.innerText = formula
+		}
+	</script>
+
+</body>
+</html>

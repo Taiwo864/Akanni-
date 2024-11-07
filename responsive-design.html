@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+	<style type="text/css">
+		.word{
+			color: red;
+		}
+
+		.mobile{
+			display: none;
+		}
+
+		.desktop{
+			display: inherit;
+		}
+		.shape{
+			height: 250px;
+			/*margin: 5px;
+			background-color: blue; 
+			display: none;
+			border: solid thick black;*/
+			background-image: radial-gradient(red, blue, green, yellow, indigo, violet);
+			display: none;
+		
+		
+		}
+		.shape div{
+				height:30px;
+				/*background-color:black;*/
+				flex: 1;
+				border-radius: 5px;
+				/*display: flex;
+				justify-content: center;
+				align-items: center;*/ 
+
+			}
+		.shp{
+			background-color: red;
+			height: 250px;
+			margin: 5px;
+			display: inherit;
+			border: solid thick black;
+			background-image: url(images/our-servise.jpg);
+			background-repeat: no-repeat;
+			background-blend-mode: luminosity;
+			background-size: cover;
+		}
+
+		.shp div{
+			margin: 5px;
+		}
+		
+
+		@media screen and (max-width: 800px){
+			.word{
+				color: black;
+			}
+
+			.mobile{
+				display: inherit;
+			}
+
+			.desktop{
+				display: none;
+			}
+			.shape{
+				display: inherit;
+			}
+
+			.shp{
+				display: none;
+			}
+			.shape div{
+				display: inherit;
+			}
+		}
+
+		@media print{
+			.word{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Responsive design</h1>
+
+	<p class="word">My color is red</p>
+
+	<p class="mobile">I will only display on mobile</p>
+	<p class="desktop">I will only display on dektop</p>
+
+	<div class="shape">
+		<div></div>
+		<div></div>
+	</div>
+	<div class="shp">
+		<div></div>
+	</div>
+
+</body>
+</html>

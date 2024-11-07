@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logic Practical</title>
+</head>
+<body>
+	<h1>Logic Practical</h1>
+
+	<h2>Login</h2>
+
+	<input type="text" id="username" placeholder="please input your username">
+	<br>
+	<input type="password" id="password" placeholder="please input your password">
+	<br>
+	<button onclick="submitInfo(username, password)">Submit</button>
+	<h2 id="getInfo"></h2>
+
+	<script type="text/javascript">
+		var profile = [
+			{
+			  	"username":"issy12",
+			  	"password":"00128"	
+			},
+			{
+			  	"username":"isaac13",
+			  	"password":"00138"	
+			},
+			{
+			  	"username":"ahmad14",
+			  	"password":"00148"	
+			},
+			{
+			  	"username":"salim15",
+			  	"password":"00158"	
+			},
+			{
+			  	"username":"debby16",
+			  	"password":"00168"	
+			},
+			{
+			  	"username":"bolaji17",
+			  	"password":"00178"	
+			}
+		]
+
+		function submitInfo(user, pass){
+			 if (profile.indexOf({"username":user.value, "password":pass.value})) {
+			 	getInfo.innerText = `User found! ${user.value}`
+			 }
+			else{
+				getInfo.innerText = "User not found"
+			}
+			
+		}
+	</script>
+
+</body>
+</html>

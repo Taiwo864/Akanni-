@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversation</title>
+	<style type="text/css">
+		*{
+            margin: 0px;
+            padding: 0px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: arial;
+            background-color: indigo;
+        }
+        button{
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 5px;
+            color: darkslategray;
+        }
+        input{
+            background-color: lightgray;
+            padding: 7px;
+            border-radius: 10px;
+        }
+	</style>
+</head>
+<body>
+	<h1>Conversation of Perimeter</h1>
+	<label>Area of perimeter</label><br>
+	<input type="number" id="pi" placeholder="Value of PI">
+	<input type="number" id="r" placeholder="Value of rad">
+
+	<button onclick="areaOfPerimeter(pi.value, r.value)">Calculate</button>
+
+	<h2 id="getValue"></h2>
+
+	<script type="text/javascript">
+		function areaOfPerimeter(pi, r) {
+			var formular = parseFloat(`${2*pi*r}`)
+			getValue.innerText = formular
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header and Footer</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+        .header{
+            background-color: darkcyan;
+            font-family: Calibri;
+            
+        }
+        .footer{
+            background-color: darkcyan;
+            font-family: Calibri;
+          
+        }
+        a{
+            color: white;
+            margin: 10px;
+        }
+        button{
+            background-color: darkgray;
+            padding: 7px;
+            color: white;
+            border-radius: 10px;
+        }
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <h1 style="color: rgb(250, 215, 215);">Welcome to my page</h1>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Product</a>
+        <a href="#">Contact us</a>
+        <button onclick="alert(`You are welcome`)">Submit</button>
+        <hr>
+    </header>
+      
+    <main>
+       <div> 
+           <img src="images/coding-pic.jpg" alt="">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <h2 style="color: rgb(250, 215, 215);">Thanks for visiting my page</h2>
+        <button onclick="alert(`Are you sure you want to exit`)">Exit</button>
+    </footer>
+</body>
+</html>

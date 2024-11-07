@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Create Element</title>
+</head>
+<body>
+	<h1 id="toRemove">Js Create Element</h1>
+
+	<script type="text/javascript">
+		//CREATING ELEMENT PROGRAMATICALLY OR FROM SCRIPT
+		var h2 = document.createElement("h2") //STEP 1: Declear the element to be created
+		h2.innerText = "I am the new heading 2" //STEP 2: set the for the element
+		h2.style.color = "red" // STYLING THE DECLARED ELEMENT
+		document.body.appendChild(h2) //STEP3: Appennd the child to the body
+
+		// HOW TO DELETE ELEMENT FROM SCRIPT/PROGRAMATICALLY
+		toRemove.remove()
+	</script>
+	
+	<script type="text/javascript">
+		// CREATING MULTIPLE ELEMENT THROUGH LOOPING
+		for (var i = 0; i <10 ; i++) {
+		 var button = document.createElement("button")
+		 button.innerText = `Click Me ${i+1}`
+		 document.body.appendChild(button)
+		}
+	</script>
+
+</body>
+</html>

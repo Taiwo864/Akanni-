@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Function</title>
+</head>
+<body>
+	<h1>Function</h1>
+	<script type="text/javascript">
+		
+		function addNum(){
+			var x = 5
+			var y = 102
+			var total = x + y
+			document.write(total, "<br>")
+		}
+
+		addNum() //To call function(void)
+		addNum()//To repeat the function
+		addNum()
+		addNum()
+
+		function greetings(){
+			document.write("Welcome", "<br>")
+		}
+		greetings()
+		greetings()
+		greetings()
+
+
+
+		//function that returns
+		function multiplyNum(){
+			var x = 5
+			let y = 6
+			const total = x * y
+			return total 
+		}
+		document.write(multiplyNum()+10, "<br>")
+
+		//function with argument
+		function squareOfNum(x, y){
+			return(`${x}raised to power ${y} is equal to ${x**y} <br>`)
+		}
+		document.write(squareOfNum(5, 3))
+		document.write(squareOfNum(5, 2))
+
+		function greetMe(name){
+			var greet = "Welcome"
+			return(`<h2>${greet}! ${name}</h2>`)
+		}
+		document.write(greetMe("Ahmad Taiwo"))
+
+		var myName = "Ahmad Taiwo"
+
+		function getMyName(){
+			document.write(myName)
+
+		}
+		getMyName()
+
+		//DEFAULT ARGUMENT
+		function welcome(name="User"){
+			document.write(`<p>Welcome! ${name}</p>`)
+		}
+
+		welcome("Ahmad Taiwo")
+	</script>
+
+</body>
+</html>

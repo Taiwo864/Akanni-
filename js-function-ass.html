@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Assignment</title>
+</head> 
+<body>
+	<h1>Function Assignment</h1>
+
+	<script type="text/javascript">
+		
+
+		//area of circle
+		function areaOfCircle(x, r){
+			return(`Area Of Circle when r is 2 is equal to ${x*r**2} <br>`)
+		}
+		document.write(areaOfCircle(3.142, 2))
+
+		//
+		function perimeterOfCircle(x, r){
+			return(`Perimeter Of Circle when r is 2 is equal to ${2*x*r} <br>`)
+		}
+		document.write(perimeterOfCircle(3.142, 2))
+
+		function nairaToDollar(naira){
+			var nairaRate = 1620
+			var dollarRate = 1/nairaRate
+			var formula = naira * dollarRate
+			return formula+"dollar"
+		}
+		document.write("<br>")
+		document.write(nairaToDollar(8100))
+		
+	</script>
+
+</body>
+</html>

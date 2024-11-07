@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logic Practical</title>
+</head>
+<body>
+	<h1>Login Practical</h1>
+
+	<input type="text" id="bname" placeholder="Please input your name">
+
+	<button onclick="setInfo()">Submit</button>
+	<h2 id="getInfo"></h2>
+
+
+	<script type="text/javascript">
+		var studentList = ["Islamiat", "David", "Isaac", "Abayomi", "Darasimi", "Mueez"]
+
+		function setInfo(){
+			if (studentList.indexOf(bname.value) !== -1){
+				getInfo.innerText = `Congratulation!you name is registered  ${bname.value}`
+			}
+
+			else{
+				getInfo.innerText = "Please check back later"
+			}
+		}
+	</script>
+
+</body>
+</html>
